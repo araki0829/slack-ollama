@@ -4,7 +4,7 @@ SlackでローカルのOllamaモデルと会話できるBot。
 
 ## 使用モデル
 
-このBotは**gpt-oss 20B**モデルを使用。
+このBotは**gpt-oss-20B**モデルを使用。
 - パラメータ数: 20.9B
 - 量子化: MXFP4
 - ローカル実行でApple SiliconのGPU最適化
