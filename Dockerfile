@@ -1,6 +1,9 @@
-FROM python:3.12.8-slim
+FROM python:3.12-slim
 
 WORKDIR /app
+
+# セキュリティアップデートを適用
+RUN apt-get update && apt-get upgrade -y && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # 必要なパッケージをインストール
 COPY requirements.txt .
